@@ -28,37 +28,37 @@ export default Controller.extend({
             link: 'i-i-s-test11-должности-l',
             caption: i18n.t('forms.application.sitemap.test11.i-i-s-test11-должности-l.caption'),
             title: i18n.t('forms.application.sitemap.test11.i-i-s-test11-должности-l.title'),
-            icon: 'book',
+            icon: 'chart line',
             children: null
           }, {
             link: 'i-i-s-test11-регистр-l',
             caption: i18n.t('forms.application.sitemap.test11.i-i-s-test11-регистр-l.caption'),
             title: i18n.t('forms.application.sitemap.test11.i-i-s-test11-регистр-l.title'),
-            icon: 'archive',
+            icon: 'edit',
             children: null
           }, {
             link: 'i-i-s-test11-сотрудник-l',
             caption: i18n.t('forms.application.sitemap.test11.i-i-s-test11-сотрудник-l.caption'),
             title: i18n.t('forms.application.sitemap.test11.i-i-s-test11-сотрудник-l.title'),
-            icon: 'phone',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-test11-контрагент-l',
             caption: i18n.t('forms.application.sitemap.test11.i-i-s-test11-контрагент-l.caption'),
             title: i18n.t('forms.application.sitemap.test11.i-i-s-test11-контрагент-l.title'),
-            icon: 'chart line',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-test11-заявка-l',
             caption: i18n.t('forms.application.sitemap.test11.i-i-s-test11-заявка-l.caption'),
             title: i18n.t('forms.application.sitemap.test11.i-i-s-test11-заявка-l.title'),
-            icon: 'book',
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-test11-записи-l',
             caption: i18n.t('forms.application.sitemap.test11.i-i-s-test11-записи-l.caption'),
             title: i18n.t('forms.application.sitemap.test11.i-i-s-test11-записи-l.title'),
-            icon: 'address card',
+            icon: 'tags',
             children: null
           }]
         }

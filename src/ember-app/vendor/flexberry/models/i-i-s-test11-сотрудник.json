@@ -113,7 +113,22 @@
           "index": 5
         }
       ],
-      "belongsTo": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Должности",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 6,
+          "type": "default",
+          "caption": "Должность",
+          "name": "должности",
+          "relatedTo": "i-i-s-test11-должности",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     },
     {
