@@ -1,0 +1,67 @@
+<h3 class="ui header">{{t "forms.i-i-s-test11-контрагент-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.договор
+      class=(if (v-get validationModel "договор" "isInvalid") "error")
+      label=(t "forms.i-i-s-test11-контрагент-e.договор-caption")
+      data-test-i-i-s-test11-контрагент-e-договор=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "договор" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.контр
+      class=(if (v-get validationModel "контр" "isInvalid") "error")
+      label=(t "forms.i-i-s-test11-контрагент-e.контр-caption")
+      data-test-i-i-s-test11-контрагент-e-контр=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "контр" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.наимен
+      class=(if (v-get validationModel "наимен" "isInvalid") "error")
+      label=(t "forms.i-i-s-test11-контрагент-e.наимен-caption")
+      data-test-i-i-s-test11-контрагент-e-наимен=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "наимен" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.организ
+      class=(if (v-get validationModel "организ" "isInvalid") "error")
+      label=(t "forms.i-i-s-test11-контрагент-e.организ-caption")
+      data-test-i-i-s-test11-контрагент-e-организ=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "организ" "message")}}
+  </div>
+</form>

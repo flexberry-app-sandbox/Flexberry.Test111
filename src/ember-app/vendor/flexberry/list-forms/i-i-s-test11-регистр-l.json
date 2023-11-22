@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-test11-регистр-e",
+  "editForm": "i-i-s-test11-регистр-e",
+  "external": false,
+  "caption": "Регистр",
+  "name": "IISTest11РегистрL",
+  "className": "РегистрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test11-регистр",
+      "modelProjection": "РегистрL"
+    }
+  ]
+}

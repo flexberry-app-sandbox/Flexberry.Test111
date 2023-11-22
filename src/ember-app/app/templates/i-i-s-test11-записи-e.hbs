@@ -1,0 +1,100 @@
+<h3 class="ui header">{{t "forms.i-i-s-test11-записи-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.кодЗаписи
+      class=(if (v-get validationModel "кодЗаписи" "isInvalid") "error")
+      label=(t "forms.i-i-s-test11-записи-e.кодЗаписи-caption")
+      data-test-i-i-s-test11-записи-e-кодЗаписи=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "кодЗаписи" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-test11-записи-e.дата-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.дата
+      class=(if (v-get validationModel "дата" "isInvalid") "error")
+      data-test-i-i-s-test11-записи-e-дата=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "дата" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.времНач
+      class=(if (v-get validationModel "времНач" "isInvalid") "error")
+      label=(t "forms.i-i-s-test11-записи-e.времНач-caption")
+      data-test-i-i-s-test11-записи-e-времНач=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "времНач" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.времОкон
+      class=(if (v-get validationModel "времОкон" "isInvalid") "error")
+      label=(t "forms.i-i-s-test11-записи-e.времОкон-caption")
+      data-test-i-i-s-test11-записи-e-времОкон=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "времОкон" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-test11-записи-e.заявка-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.заявка
+      relationName="заявка"
+      projection="ЗаявкаL"
+      title=(t "forms.i-i-s-test11-записи-e.заявка-caption")
+      readonly=readonly
+      componentName="заявкаLookup"
+      class=(if (v-get validationModel "заявка" "isInvalid") "error")
+      data-test-i-i-s-test11-записи-e-заявка=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "заявка" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-test11-записи-e.регистр-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.регистр
+      relationName="регистр"
+      projection="РегистрL"
+      title=(t "forms.i-i-s-test11-записи-e.регистр-caption")
+      readonly=readonly
+      componentName="регистрLookup"
+      class=(if (v-get validationModel "регистр" "isInvalid") "error")
+      data-test-i-i-s-test11-записи-e-регистр=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "регистр" "message")}}
+  </div>
+</form>

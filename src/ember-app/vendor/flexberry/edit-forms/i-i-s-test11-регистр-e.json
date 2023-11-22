@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Регистр",
+  "name": "IISTest11РегистрE",
+  "className": "РегистрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test11-регистр",
+      "modelProjection": "РегистрE"
+    }
+  ]
+}

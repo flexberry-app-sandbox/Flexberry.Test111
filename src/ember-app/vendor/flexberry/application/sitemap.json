@@ -1,0 +1,57 @@
+﻿{
+  "applicationCaption": "Test11",
+  "applicationTitle": "Test11",
+  "items": [
+    {
+      "link": null,
+      "menuName": "test11",
+      "caption": "Test11",
+      "title": "Test11",
+      "children": [
+        {
+          "link": "i-i-s-test11-должности-l",
+          "menuName": null,
+          "caption": "Должности",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test11-регистр-l",
+          "menuName": null,
+          "caption": "Регистр",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test11-сотрудник-l",
+          "menuName": null,
+          "caption": "Сотрудник",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test11-контрагент-l",
+          "menuName": null,
+          "caption": "Контрагент",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test11-заявка-l",
+          "menuName": null,
+          "caption": "Заявка",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test11-записи-l",
+          "menuName": null,
+          "caption": "Записи",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}
